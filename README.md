@@ -6,7 +6,7 @@ Just copy the two file `Cutscene.tscn` and `Cutscene.gd` into your project. Then
 
 ## Methods
 
-#### `Cutscene.play(scene: Node)`
+### `Cutscene.play(scene: Node)`
 This pauses the current scene and displays the cutscene.  
 Arguments:
 - `scene: Node`  
