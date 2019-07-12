@@ -17,5 +17,26 @@ Arguments:
   Cutscene.play(scene.instance())
   ```
 
+### `Cutscene.pause()`
+This pauses the cutscene. Attention! If you pause your cutscene, you wont be able to resume it from within
+your cutscene (as it is paused). You may want to set a `pause_mode` in your cutscene to `process` to be able to unpause.
+
+### `Cutscene.resume()`
+Resume playing the cutscene.
+
+### `Cutscene.toggle_pause()`
+This toggles the pause/resume of the cutscene. The same warning as for `Cutscene.pause()` applies here.
+
+### `Cutscene.stop()`
+Stops the cutscene and resumes the scene that was active before the cutscene was started.
+
+## Properties
+
+### `Cutscene.is_playing`
+Indicates if the cutscene is playing or paused
+
+### `Cutscene.cutscene`
+The currently active Cutscene. If no cutscene is active this is `null`.
+
 ## Additional Information
 I seperated this from a addon I wrote for my space game project. It should work on it's own but I didn't test. If it does not work please open an issue.
