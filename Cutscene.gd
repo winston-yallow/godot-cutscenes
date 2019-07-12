@@ -3,7 +3,7 @@ extends Control
 var is_playing = false
 
 var prev_pause_state: bool
-var cutscene: Node
+var cutscene = null
 
 onready var viewport: Viewport = $ViewportContainer/Viewport
 
@@ -55,5 +55,6 @@ func stop():
     viewport.pause_mode = Node.PAUSE_MODE_STOP
     
     cutscene.queue_free()
+    cutscene = null
     
     is_playing = false
