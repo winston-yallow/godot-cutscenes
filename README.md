@@ -39,4 +39,4 @@ Indicates if the cutscene is playing or paused
 The currently active Cutscene. If no cutscene is active this is `null`.
 
 ## Additional Information
-I seperated this from a addon I wrote for my space game project. It should work on it's own but I didn't test. If it does not work please open an issue.
+I seperated this from an addon I wrote for my space game project. It should work on it's own but I didn't test. If it does not work please open an issue.
