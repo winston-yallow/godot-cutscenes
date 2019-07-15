@@ -1,8 +1,14 @@
 # Godot Cutscenes
 A small but effective cutscene addon for the godot game engine
 
+## Concept
+The Cutscene is basically an autoload that is always available. When a cutscene is played the scene tree gets paused. 
+The provided cutscene will be added as a child to the cutscene autoload. The cutscene autload itselt has it's `pause_mode` 
+set to `Node.PAUSE_MODE_PROCESS`. This way the cutscene is playing while the main scene is paused.
+
 ## Setup
-Just copy the two file `Cutscene.tscn` and `Cutscene.gd` into your project. Then add the scene file as an autoload in the project settings. That's all you need to do.
+Just copy the two files `Cutscene.tscn` and `Cutscene.gd` into your project. Then add the scene file as an autoload 
+in the project settings. That's all you need to do.
 
 ## Methods
 
@@ -39,4 +45,5 @@ Indicates if the cutscene is playing or paused
 The currently active Cutscene. If no cutscene is active this is `null`.
 
 ## Additional Information
-I seperated this from an addon I wrote for my space game project. It should work on it's own but I didn't test. If it does not work please open an issue.
+I seperated this from an addon I wrote for my space game project. It should work on it's own but I didn't test. If it 
+does not work please open an issue.
