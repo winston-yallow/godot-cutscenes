@@ -11,6 +11,7 @@ func _ready():
     pause_mode = Node.PAUSE_MODE_PROCESS
     visible = false
     viewport.pause_mode = Node.PAUSE_MODE_STOP
+    # warning-ignore:return_value_discarded
     connect("resized", self, "adjust_sizes")
     adjust_sizes()
 
